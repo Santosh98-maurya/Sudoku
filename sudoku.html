@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"./>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Sudoku Game</h1>
+    <div id="setup-game">
+        <div id="level">
+            <h3>Level: </h3>
+            <label><input id="level-1" type="radio" name="level" value="easy" checked>Easy</label>
+            <label><input id="level-2" type="radio" name="level" value="medium">Medium</label>
+            <label><input id="level-3" type="radio" name="level" value="hard">Hard</label>
+        </div>
+        <div id="time">
+            <h3>Time: </h3>
+            <label><input id="time-1" type="radio" name="time" value="5" checked>5 min</label>
+            <label><input id="time-2" type="radio" name="time" value="10" >10 min</label>
+            <label><input id="time-3" type="radio" name="time" value="15" >15 min</label>
+        </div>
+        <div id="theam">
+            <h3>Theam: </h3>
+            <label><input id="theam-1" type="radio" name="theam" value="light" checked>Light</label>
+            <label><input id="theam-2" type="radio" name="theam" value="dark">Dark</label>
+        </div>
+    </div>
+
+    <button id="start-btn">Create New Game</button>
+</header>
+
+<body>
+    <div id="stats">
+        <p id="timer">Timer</p>
+        <p id="live">Live</p>
+    </div>
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+    </div>
+    <script src="sudoku.js"></script>
+</body>
+
+<footer>
+    <p>Made By Santosh Maurya</p>
+</footer>
+</html>
